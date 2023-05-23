@@ -27,7 +27,7 @@ allImg[active_element].classList.add('active');
 let backBtn = document.querySelector('.back');
 let goBtn = document.querySelector('.go');
 
-//ISTRUZIONI AL CLICK SUL BOTTONE
+//ISTRUZIONI AL CLICK SUL BOTTONE AVANTI
 goBtn.addEventListener('click', function() {
 
     //RIMUOVO LA CLASSE ACTIVE ALL'IMG PRECEDENTE
@@ -36,6 +36,21 @@ goBtn.addEventListener('click', function() {
 
         //INCREMENTO INDICE DELL'ARRAY PER PASSARE ALL'IMG SUCCESSIVA
         active_element++;
+
+        //APPLICO LA CLASSE ACTIVE ALL'IMG
+        allImg[active_element].classList.add('active');
+    }
+} )
+
+//ISTRUZIONI AL CLICK SUL BOTTONE INDIETRO
+backBtn.addEventListener('click', function() {
+
+    //RIMUOVO LA CLASSE ACTIVE ALL'IMG PRECEDENTE
+    if (active_element < (images.length - 1)) {
+        allImg[active_element].classList.remove('active');
+
+        //INCREMENTO INDICE DELL'ARRAY PER PASSARE ALL'IMG SUCCESSIVA
+        active_element--;
 
         //APPLICO LA CLASSE ACTIVE ALL'IMG
         allImg[active_element].classList.add('active');
