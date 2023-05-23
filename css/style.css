@@ -34,6 +34,7 @@
     display: block;
 }
 
+/* STLE BOTTONI */
 .pulsanti .back, .pulsanti .go {
     background-color: lightgrey;
     border-radius: 50%;
