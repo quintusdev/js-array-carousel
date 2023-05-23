@@ -3,3 +3,43 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* STYLE CONTAINER */
+.container {
+    width: 40%;
+    height: 600px;
+    margin: 50px auto;
+    border: 2px solid blue;
+    position: relative;
+}
+
+.img{
+    height: 100%;
+}
+
+/* STYLE CONTENUTO */
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.pulsanti {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pulsanti .back, .pulsanti .go {
+    background-color: lightgrey;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
