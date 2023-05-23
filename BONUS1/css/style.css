@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* STYLE CONTAINER */
+.container {
+    width: 800px;
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgElement{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.imgElement img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* STYLE CONTENUTO */
+.imgElement.active {
+    display: block;
+}
+
+/* STLE BOTTONI */
+.pulsanti .back, .pulsanti .go {
+    background-color: lightgrey;
+    border-radius: 50%;
+    padding: 5px 8px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.back {
+    bottom: 0;
+    left: 50%;
+}
+
+.go {
+    top: 0;
+    left: 50%;
+}
